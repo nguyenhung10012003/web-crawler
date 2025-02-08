@@ -79,6 +79,17 @@ export function getPageHtml(
   );
 }
 
+
+/**
+ * Get the URLs of files with a specific extension
+ * @param page - The Playwright page object
+ * @param extensionMatch - The regex pattern to match the file extension
+ * @param baseUrl - The base URL to resolve relative URLs
+ * @returns - The URLs of the files
+ * @example
+ * const urls = await getFileUrls(page, "pdf", "https://example.com");
+ * console.log(urls);
+ */
 export function getFileUrls(
   page: Page,
   extensionMatch: string,
